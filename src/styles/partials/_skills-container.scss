@@ -1,0 +1,42 @@
+.skills-section {
+    
+    .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        border-radius: 5px;
+    }
+    .skill {
+        // display none allows for fade-in feature
+        display: none;
+        position: relative;
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px dashed $skills-box-border-color;
+        border-radius: 4px;
+        font-family: 'Overpass', sans-serif;
+        filter: $skills-icon-dropshadow;
+        background-color: $skills-box-bg;
+        transition: transform 0.2s;
+        transition-timing-function: ease-in;
+        
+        .icon {
+            font-size: 3rem;
+        }
+        .svg-icon {
+            width: 3rem;
+        }
+        .skill-name {
+            text-align: center;
+            margin-top: 0.1rem;
+            font-size: 0.9rem;
+            font-family: 'Nunito Sans', sans-serif;
+            color: $skill-name-text-color;
+        }
+        &:hover {
+            transform: rotate(5deg) scale(1.2);
+            border-style: solid;
+        }
+    }
+}

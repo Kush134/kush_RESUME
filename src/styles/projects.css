@@ -1,0 +1,311 @@
+.fa-js-square {
+  color: #F0DB4F;
+  margin: 0 0 0.2rem 0.65rem;
+}
+
+.fa-java {
+  color: red;
+}
+
+.fa-python {
+  color: #4B8BBE;
+}
+
+.fa-html5 {
+  color: #e34c26;
+}
+
+.fa-css3-alt {
+  color: #264de4;
+}
+
+.fa-git-alt {
+  color: #f34f29;
+  margin: 0.6rem 0 0.2rem 0.25rem;
+}
+
+.fa-sass {
+  color: #c69;
+}
+
+@media screen and (max-width: 750px) {
+  .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrap .left-column {
+    margin-bottom: 2.5rem;
+    min-height: 25rem;
+  }
+}
+
+.profile-container {
+  width: 18rem;
+  min-height: 10rem;
+  padding: 1rem 0;
+  border-radius: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+.profile-container .profile-pic {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.profile-container .name {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.profile-container .tagline {
+  font-size: 1rem;
+}
+
+.profile-container .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  margin: 1rem 0;
+}
+
+.profile-container .socials i {
+  color: white;
+  font-size: 1.35rem;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.profile-container .socials i:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.skills-section .skills-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 5px;
+}
+
+.skills-section .skill {
+  display: none;
+  position: relative;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px dashed grey;
+  border-radius: 4px;
+  font-family: 'Overpass', sans-serif;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.15));
+  background-color: #1b1c1e;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
+.skills-section .skill .icon {
+  font-size: 3rem;
+}
+
+.skills-section .skill .svg-icon {
+  width: 3rem;
+}
+
+.skills-section .skill .skill-name {
+  text-align: center;
+  margin-top: 0.1rem;
+  font-size: 0.9rem;
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+}
+
+.skills-section .skill:hover {
+  -webkit-transform: rotate(5deg) scale(1.2);
+          transform: rotate(5deg) scale(1.2);
+  border-style: solid;
+}
+
+.projects-section {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.projects-section .projects-grid {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+}
+
+.projects-section .projects-grid .project {
+  width: 75%;
+  min-height: 8rem;
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  border: 1px solid #505066;
+  border-radius: 4px;
+  background-color: #1b1c1e;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.projects-section .projects-grid .project:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+.projects-section .projects-grid .project .project-content {
+  margin: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.projects-section .projects-grid .project .project-content .project-title {
+  font-size: 1.1rem;
+}
+
+.projects-section .projects-grid .project .project-content .project-about {
+  font-size: 0.8rem;
+  margin: 0.75rem 0;
+}
+
+.projects-section .projects-grid .project .project-content .project-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.projects-section .projects-grid .project .project-content .project-tools .project-tool-icon {
+  padding-left: 2rem;
+}
+
+.projects-section .projects-grid .project .project-content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
+  height: 95vh;
+  background-color: black;
+}
+
+body {
+  display: none;
+}
+
+.flex-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.frosted-bg {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .left-column {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  border-radius: 7px;
+  min-width: 18rem;
+  background-image: url("assets/images/Capri.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.wrap .left-column .bg-options-bar {
+  top: 0;
+  right: 0;
+  width: 96.5%;
+  padding: 5px;
+  color: white;
+  font-size: 1.35rem;
+  position: absolute;
+  border-radius: 6px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.178);
+}
+
+.wrap .left-column .bg-options-bar .fa-random,
+.wrap .left-column .bg-options-bar .fa-eye {
+  float: right;
+  margin-left: 10px;
+}
+
+.wrap .right-column {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.wrap .right-column .content {
+  height: 90vh;
+  max-width: 90%;
+  margin: 1rem 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: scroll;
+}
+
+.wrap .right-column .content .header {
+  padding-bottom: 5px;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  border-bottom: 1px solid white;
+}
+/*# sourceMappingURL=projects.css.map */

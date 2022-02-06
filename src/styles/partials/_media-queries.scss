@@ -1,0 +1,10 @@
+// screens smaller than 900px
+@media screen and (max-width: 750px) {
+    .wrap {
+        flex-direction: column;
+        .left-column {
+            margin-bottom: 2.5rem;
+            min-height: 25rem;
+        }
+    }
+}

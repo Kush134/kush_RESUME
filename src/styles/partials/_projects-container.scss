@@ -1,0 +1,49 @@
+.projects-section {
+    width: 100%;
+    margin-top: 2.5rem;
+
+    .projects-grid {
+        flex-direction: column;
+        margin-top: 1rem;
+
+        .project {
+            width: 75%;
+            min-height: 8rem;
+            margin: 0.5rem 0;
+            font-size: 1.25rem;
+            color: $project-text-color;
+            font-family: 'Overpass', sans-serif;
+            border: 1px solid rgb(80, 80, 102);
+            border-radius: 4px;
+            background-color: $project-box-bg;
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: scale(1.06);
+            }
+
+            .project-content {
+                margin: 1rem;
+                font-family: $project-text-font;
+                .project-title {
+                    font-size: 1.1rem;
+                }
+                .project-about {
+                    font-size: 0.8rem;
+                    margin: 0.75rem 0;
+                }
+                .project-tools {
+                    display: flex;
+                    justify-content: flex-start;
+                    .project-tool-icon {
+                        padding-left: 2rem;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+    }
+}

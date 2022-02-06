@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal portfolio to showcase my projects and experiences.">
+    <meta name="author" content="Devarshi Patel">
+    <meta name="keywords" content="Devarshi Patel, Patel, Devarshi, Patel Devarshi, dev, dev-ap, devarshi-patel, devarshi.patel, Canada, Ontario, Toronto, Ryerson University, Ryerson, RU, Computer Science, Computer, Science, Student Developer, Student, Developer, Coder, Software Engineer, Software Engineering, Software, Engineer, Engineering">
+    <link rel="icon" href="assets/logos/favicon.ico">
+
+    <link rel="stylesheet" href="src/styles/main.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        /* checks for user's dark/light-mode site preference */
+        if (localStorage.getItem('color-mode') === 'dark'
+            || (window.matchMedia('(prefers-color-scheme: dark)').matches
+            && !localStorage.getItem('color-mode'))
+        ) {
+            // if true, set the site to Dark Mode
+            $("html").attr('color-mode', 'dark');
+        }
+    </script>
+
+    <script src="src/js/main.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css"> -->
+
+    <title>Kush portfolio</title>
+
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#col-1">Skip to main</a>
+
+    <div class="toggle">
+        <span><i class="fas fa-adjust" id="adjust-icon"></i></span>
+        <label for="toggle-box" class="switch">
+            <input type="checkbox" name="toggle-theme" id="toggle-box">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    
+    <section class="two-column">
+        <div id="col-1">
+            <div class="title-box">
+                <div id="title-greeting">Hello, My name is</div>
+                <div id="title-name">Kush bhargav sah</div>
+                <div id="title-description">
+                    I'm an aspiring Software Engineer, Currently in Secound year of Computer Science at SRM University,Chennai KTR
+                    working towards my B.TECH. For more details go to project section and explore the portfolio :)
+                </div>
+                
+                <div id="menu">
+                    <a href="projects.html" class="menu-item">
+                        <span class="left-bracket">[</span>
+                        <span>Projects</span>
+                        <span class="right-bracket">]</span>
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/11_JAuyToxBCkFZklndLgmvRZ_cKFtTAt/view?usp=drivesdk" target="_blank" class="menu-item">
+                        <span class="left-bracket">[</span>
+                        <span>Resumé</span>
+                        <span class="right-bracket">]</span>
+                    </a>
+
+                    <a href="https://drive.google.com/drive/folders/199V8pDXEA50Mi8nbZ74I5XrIGHsgMkiW"  target="_blank" class="menu-item">
+                        <span class="left-bracket">[</span>
+                        <span>E-certificate</span>
+                        <span class="right-bracket">]</span>
+                    </a>
+
+                    <a href="https://medium.com/@kushsah42" target="_blank" class="menu-item" rel="noopener">
+                        <span class="left-bracket">[</span>
+                        <span>Blogs</span>
+                        <span class="right-bracket">]</span>
+                    </a>
+                </div>            
+            </div>
+        </div>
+
+        <div id="col-2">
+            <canvas class="illo" width="260" height="260"></canvas>
+            <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+            <script src="src/js/zdogg.js"></script>
+        </div>
+    </section>
+    
+    <!-- Kursor.js uncomment to add cool cursor
+    <script src="https://unpkg.com/kursor"></script>
+    <script>
+        new kursor({
+            type: 4,
+            removeDefaultCursor: true,
+            color: `#fff`
+        })
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,272 @@
+/* * {
+    border: 1px red solid;
+} */
+
+:root[color-mode="light"] {
+    --page-color: white;
+    --title-name-color: rgb(74, 74, 74);
+    --misc-text-color: rgb(74, 74, 74);
+    --adjust-icon-color: black;
+}
+
+:root[color-mode="dark"] {
+    --page-color: #111;
+    --title-name-color: white;
+    --misc-text-color: white;
+    --adjust-icon-color: white;
+}
+
+
+body {
+    height: 100vh;
+    background-color: var(--page-color);
+    border-color: blue;
+    overflow-y: scroll;
+    display: none;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+  
+.skip-link:focus {
+    top: 0;
+}
+
+.two-column {
+    display:flex;
+    flex-direction:row;
+    position: relative;
+    top: 18%;
+    width: 100%;
+}
+
+#col-1,
+#col-2 {
+    flex:1; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.title-box {
+    width: 25rem;
+    color: var(--misc-text-color);
+}
+
+#title-greeting {
+    font-size: 0.8rem;
+    font-weight: 600;
+    width:fit-content;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#title-name {
+    font-size: 2.4rem;
+    font-family: 'Playfair Display', serif;
+    width: fit-content;
+    margin: 0.6rem 0;
+    color: var(--title-name-color);
+}
+
+#title-description {
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.illo {
+    cursor: grab;
+}
+
+.illo:active {
+    cursor: grabbing;
+}
+
+a {
+    position:relative;
+}
+
+.left-bracket,
+.right-bracket {
+    position: absolute;
+    color: inherit;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.left-bracket {
+    left: -7px;
+}
+
+.right-bracket {
+    right: -7px;
+}
+
+a:hover .left-bracket {
+    left: -20px;
+    opacity: 1;
+}
+
+a:hover .right-bracket {
+    right: -20px;
+    opacity: 1;
+}
+
+.menu-item:hover {
+    color:cornflowerblue;
+}
+
+
+/* dark-light mode toggle */
+.toggle {
+    float: right;
+    margin: 1rem 1rem 0 0;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    inset: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+    cursor: pointer;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 2.5px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #00ff22;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #00ff22;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(29.5px);
+    -ms-transform: translateX(29.5px);
+    transform: translateX(29.5px);
+}
+
+#adjust-icon {
+    position: relative;
+    bottom: 1px;
+    color: var(--adjust-icon-color);
+}
+
+@media screen and (max-width: 770px) {
+    .two-column {
+        flex-direction: column;
+        position: relative;
+        top: 1%
+    }
+
+    #col-1 {
+        margin-bottom: 3rem;
+    }
+
+    .title-box {
+        max-width: 85%;
+    }
+
+    a:hover .left-bracket {
+        left: -12px;
+        opacity: 1;
+    }
+    
+    a:hover .right-bracket {
+        right: -12px;
+        opacity: 1;
+    }
+
+    .illo {
+        zoom: 0.9;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .title-box {
+        margin-left: 2rem;
+    }
+
+    #title-greeting {
+        font-size: 1rem;
+    }
+
+    #title-name {
+        font-size: 3rem;
+    }
+
+    #title-description {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .illo {
+        zoom: 1.15;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #title-greeting {
+        font-size: 1.2rem;
+    }
+
+    #title-name {
+        font-size: 3.2rem;
+    }
+
+    #title-description {
+        font-size: 1.3rem;
+        line-height: 1.75rem;
+    }
+
+    .illo {
+        zoom: 1.3;
+    }
+}
+
+/* No CSS *//*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+.profile-container {
+    width: 18rem;
+    min-height: 10rem;
+    padding: 1rem 0;
+    border-radius: 5px;
+    flex-direction: column;
+    font-family: $profile-text-font;
+    color: $profile-text-color;
+
+    .profile-pic {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+    }
+    .name {
+        font-size: 1.3rem;
+        margin: 1rem 0;
+    }
+    .tagline {
+        font-size: 1rem;
+    }
+    .socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 1rem 0;
+        i {
+            color: $socials-icon-color;
+            font-size: 1.35rem;
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+    }
+}

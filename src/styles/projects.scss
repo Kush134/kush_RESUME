@@ -1,0 +1,82 @@
+// * {
+//     border: 1px red solid;
+// }
+
+@import "partials/logos";
+@import "partials/media-queries";
+@import "partials/variables";
+@import "partials/profile-container";
+@import "partials/skills-container";
+@import "partials/projects-container";
+
+html, body {
+    height: 95vh;
+    background-color: $page-bg;
+}
+
+body {
+    display: none;
+}
+
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frosted-bg {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, .15);
+}
+
+.wrap {
+    display: flex;
+
+    .left-column {
+        flex-basis: 30%;
+        border-radius: 7px;
+        min-width: 18rem;
+        background-image: $profile-bg;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        .bg-options-bar {
+            top: 0;
+            right: 0;
+            width: 96.5%;
+            padding: 5px;
+            color: white;
+            font-size: 1.35rem;
+            position: absolute;
+            border-radius: 6px;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.178);
+            .fa-random,
+            .fa-eye {
+                float:right;
+                margin-left: 10px;
+            }
+        }
+    }
+  
+    .right-column {
+        flex-basis: 70%;
+
+        .content {
+            height: 90vh;
+            max-width: 90%;
+            margin: 1rem 0;
+            flex-direction: column;
+            overflow: scroll;
+
+            .header {
+                padding-bottom: 5px;
+                font-size: 2rem;
+                font-family: 'Playfair Display', serif;
+                color: $section-header-color;
+                border-bottom: 1px solid $section-underline-color;
+            }
+        }
+    }
+}
